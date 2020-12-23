@@ -1,5 +1,5 @@
-## Is Tom Brady really the Greatest Of All Time
-# COMM 318 Final  Project
+# Is Tom Brady really the Greatest Of All Time
+## COMM 318 Final  Project
 
 This project conducts an analysis of Tom Brady's performance over the course of his career on the New England Patriots.
 
