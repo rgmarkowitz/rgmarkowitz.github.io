@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>COMM 318 Final Project</title>
+  <meta name="description" content="COMM 318 Final Project">
+  <meta name="keywords" content="Tom Brady, GOAT, Football, Data Science">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Is Tom Brady <i>really</i> the 🐐?</h1>
+    <h2>Analysis by Rachel Markowitz</h2>
+    <h3>COMM 318 Final Project</h3>
+    <h4>
+      This project aims to investigate whether Tom Brady is the GOAT (greatest of all time),
+      using a data driven approach. With data from FiveThirtyEight,
+      this project analyzes his performance over time and compares him to other allstar quarterbacks.
+      Finally, this project uncovers what the public thinks of Tom Brady, using Google Trends data.
+    </h4>
+  </div>
+
+  <div class="data story">
+    <p>
+      Over the course of NFL history, there have been many excellent players to come and go. Yet, none of them have been deemed the title of ‘GOAT’ (Greatest of all time), that is, until Tom Brady. Selected in the 6th round as the 199th pick, coaches
+      and
+      managers did not have faith that this player would become the best quarterback ever in the league. Yet to the dismay of many, six Super Bowl wins later, he is regarded as one of the all time best. As a lifelong Tom Brady and Patriots fan, I
+      wanted to investigate the data behind this claim - what makes Tom Brady the GOAT and does the data back it up? Ultimately, the data tells an interesting story and shows...
+    </p>
+
+    <p>In order to analyze Tom Brady's performance, I used a dataset from FiveThirtyEight which included statistics from every single NFL game from 1920 to today. Some of the relevant information the dataset held was home and away teams playing,
+      their starting Quarterbacks, projected rankings of Quarterbacks, and post game rankings. To rank players over such a long period of time, FiveThirtyEight uses Elo ratings, which is an algorithm for ranking players in competitive games. Teams
+      and quarterbacks with higher Elo ratings have a higher probability of winning than teams and quarterbacks with lower Elo ratings. After games, Elo ratings are updated, and if a team with a lower Elo rating beats a team with a higher Elo rating,
+      their rating increases a larger amount than the winning team would if the winning team had a higher Elo rating to begin with. While its predictions may not be as accurate as lines in Las Vegas, they are constantly updating and adapting to
+      factors like home team advantage and margin of victory. When FiveThirtyEight uses Elo ratings for the NFL, the Elo ratings also have some level of mapping to points scored in games, but the math behind that is not necessary for this analysis.
+      Now enough of this technical jargon, let’s get into the data!
+    </p>
+
+    <p>The first line of analysis I conducted analyzed Tom Brady’s performance over time. I wanted to see his numbers and stats, and how he had performed over the lifetime of his career. Using the data provided, I isolated to games where Tom Brady
+      was the home quarterback, and selected his post game Elo rating. The graph below depicts his performance over his time on the New England Patriots. While his Elo rating started off low when he took over for the injured Drew Bledsoe (previous
+      starting quarterback in 2001), it spiked up in 2002 and 2004, when he won the Super Bowl Championship. His performance stayed fairly consistent as he claimed the title of national champion again in 2005. While he did not win another Super Bowl
+      until 2015, his performance continued to rise, and he was named NFL MVP in 2007. In his last three super bowl wins (2015, 2017, 2019), his Elo ratings stayed relatively high, as he showed profound dominance in his position. Even as he reached
+      his 40s, when many deemed him too old to play, he became the oldest NFL quarterback to win a super bowl.
+    </p>
+
+    <img src="/Users/rachelmarkowitz1/Desktop/Desktop_Files/Penn/COMM 318/images/brady_graph1.png" alt="">
+
+    <p>Next, I wanted to examine whether Brady’s performance differed whether he was playing a home versus away game. I expected the results to show his home performance to be higher, as he would be more comfortable in his own stadium with his own
+      fans. The data, however, told a different story. While the ratings closely tracked each other, Tom Brady actually had a higher average Elo rating for away games compared to home ones, 191.7 and 183.97 respectively. One possible explanation for
+      this could be that over the long course of his career, he gained comfort in other stadiums and there was not a significant difference to him. In addition, it is noteworthy that as he is one of the best quarterbacks, one of the qualities that
+      could possibly make him so good is that he is not phased by away games as other football players might be. To see how another (not great) quarterback would compare to Brady’s performance, I ran the same analysis on Eli Manning, who had a
+      lengthy, yet not as successful career. While his Elo ratings were much lower than Tom’s, he also had a higher average Elo rating for away games than home games. Thus, the higher Elo rating for away games may be due to two different reasons.
+      First, quarterbacks may have to compensate for the challenges of an away game with better performance and secondly, the post game Elo ratings would increase a larger amount if they won a home versus away game, since the expectation of winning
+      an away game is lower.</p>
+
+    <img src="/Users/rachelmarkowitz1/Desktop/Desktop_Files/Penn/COMM 318/images/brady_graph2.png" alt="">
+
+    <p>It is clear Tom Brady is an incredibly high performing quarterback. But how does he stack up against other all time greats? For this line of analysis, I compared Tom Brady’s performance to the following five NFL greatest quarterbacks: Peyton
+      Manning, Dan Marino, John Elway, Joe Montana, and Johnny Unitas. While there is no definitive ranking of best quarterbacks in the NFL, these five are widely accepted as some of the best in history. To first compare their performance, I analyzed
+      the average Elo rating amongst these quarterbacks. For all of them, I used their home-game post-game Elo ratings, to keep the conditions as alike as possible.</p>
+
+    <img src="/Users/rachelmarkowitz1/Desktop/Desktop_Files/Penn/COMM 318/images/best_graph1.png" alt="">
+
+    <p>While all of these ratings are relatively high, it is clear Tom Brady and Peyton Manning outshine the rest. In fact, Peyton Manning has the highest average Elo rating, approximately 12 points greater than Brady’s. In addition, Manning’s
+      maximum Elo rating is higher than Brady’s, with a score of 302.86 compared to 291.82. Does this mean Tom Brady should lose his beloved title of the GOAT? Let’s not jump to that conclusion just yet, and further explore how Brady compares to
+      these all time greats. The next line of analysis I performed was each quarterback’s average home and away Elo rating. As Brady’s away performance on average was better than his home performance, I expected this to be the same for each of these
+      elite quarterbacks. The data shows that only Brady, Manning, and Unitas’ away performances were on average higher than their home performances, demonstrating that this characteristic is not common of every star quarterback, and perhaps making
+      them more competitive quarterbacks among the group. </p>
+
+    <img src="/Users/rachelmarkowitz1/Desktop/Desktop_Files/Penn/COMM 318/images/best_graph2.png" alt="">
+
+    <p> My last line of analysis looked into when Tom Brady truly gained this title of GOAT. I thought one of the best ways to find an answer to this would be using Google Trends data, which shows how the popularity of a specific query has changed
+      over time. The query I entered was ‘Tom Brady Goat,’ as I wanted to see when the initial association between the two phrases (Tom Brady and Goat) began. The blue line indicates that searches for this phrase remained relatively stagnant from
+      2004 to 2016, but had an enormous spike around the beginning of 2017. This spike coincided with the Patriots’ win over the Atlanta Falcons in Super Bowl LI, where the Patriots came back from a 28-3 deficit for their fifth Super Bowl win. This
+      remarkable comeback was due to many stars on the team, especially Tom Brady. Brady was named Super Bowl MVP (for the fourth time) after completing 43 passes for 466 passing yards. The performance of this game, and the biggest comeback in Super
+      Bowl history, was so unprecedented, and largely due to Brady’s performance, leading him to be named the Greatest Of All Time.</p>
+
+    <img src="/Users/rachelmarkowitz1/Desktop/Desktop_Files/Penn/COMM 318/images/trends_graph1.png" alt="">
+
+    <p>The blue line has spiked once more since this phenomenal game, around early 2019. This bump in search trends coincided with Tom Brady’s last Super Bowl win with the Patriots in February 2019, against the LA Rams. This game made history as the
+      lowest scoring game in Super Bowl history, and Wide Receiver Julian Edelman on the Patriots was named MVP. As a much less exciting game than their 2017 win, it is understandable that the Google searches for ‘Tom Brady Goat’ would be higher than
+      an average day, but significantly less than its original boom.</p>
+
+    <p>The data highlight varying sides of this story. It is clear that Tom Brady has had a history of outstanding game performance, and he typically performs better during away games than home ones. However, his Elo rating alone is not the best in
+      history. Peyton Manning has both a higher average and maximum Elo rating than Brady, but what does this signal? Does this mean Tom Brady isn’t actually the Greatest Of All Time? I would argue that when one becomes the ‘GOAT,’ it includes a much
+      wider scope of analysis. If greatness was measured purely by Elo rating, then sure, Peyton Manning would win. However, there is much more to the story. Tom Brady has shown consistency through his 9 Super Bowl appearances and 6 Super Bowl wins.
+      Tom Brady has shown perseverance, coming back from injuries and making historic comebacks. Tom Brady has shown grit, by working harder and staying healthier as he aged, beating all odds. And lest we forget the amazing team and coaching Brady
+      has had behind him for his entire career on the Patriots, aiding him in his rise to stardom. Overall, though some of this data may not depict Tom Brady as the GOAT, this data does not tell the whole story, and would need a much deeper analysis
+      to actually remove Tom Brady from his throne.</p>
+    <p>Sources: <br>
+      <a href="https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/">https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/</a>
+      <br>
+      <a href="https://www.geeksforgeeks.org/elo-rating-algorithm/">https://www.geeksforgeeks.org/elo-rating-algorithm/</a>
+      <br>
+      <a href="https://en.wikipedia.org/wiki/Super_Bowl_LI">https://en.wikipedia.org/wiki/Super_Bowl_LI</a>
+      <br>
+      <a href="https://en.wikipedia.org/wiki/Super_Bowl_LIII">https://en.wikipedia.org/wiki/Super_Bowl_LIII</a>
+    </p>
+  </div>
+</body>
