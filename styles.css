@@ -5,10 +5,7 @@
 }
 
 body {
-  /* background-color: var(--background); */
   text-align: left;
-  /* margin-right: 300px;
-  margin-left: 300px; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -37,6 +34,7 @@ h3 {
 }
 
 h4 {
+  font-sze: 20px;
   color: var(--primary);
   margin-right: 150px;
   margin-left: 150px;
@@ -54,7 +52,13 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 720px;
+  height: 320px;
+}
+
+figure {
+  margin-left: 275px;
+  margin-right: 275px;
 }
 
 figcaption {
