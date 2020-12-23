@@ -46,7 +46,6 @@ p {
   margin-left: 275px;
   margin-right: 275px;
   font-family: 'Poppins', sans-serif;
-  /* font-family: 'Quicksand', sans-serif; */
   font-size: 18px;
   margin-bottom: 30px;
 }
@@ -56,4 +55,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+figure {
+  display: block;
 }
