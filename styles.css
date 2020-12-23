@@ -57,6 +57,10 @@ img {
   width: 50%;
 }
 
+figcaption {
+  text-align: center;
+}
+
 figure {
   display: block;
 }
